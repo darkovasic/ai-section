@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW Standard 2021 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="153.829mm" height="56.6664mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 4038.4 1487.63"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil2 {fill:none}
+    .fil1 {fill:url(#id1);fill-rule:nonzero}
+    .fil0 {fill:url(#id2);fill-rule:nonzero;fill-opacity:0.101961}
+   ]]>
+  </style>
+   <clipPath id="id0">
+    <path d="M255.73 0l3526.93 0c140.66,0 255.74,115.08 255.74,255.73l0 976.17c0,140.66 -115.08,255.73 -255.74,255.73l-3526.93 0c-140.65,0 -255.73,-115.08 -255.73,-255.73l0 -976.17c0,-140.65 115.08,-255.73 255.73,-255.73z"/>
+   </clipPath>
+  <linearGradient id="id1" gradientUnits="userSpaceOnUse" x1="2160.84" y1="2082.34" x2="2160.84" y2="-110.5">
+   <stop offset="0" style="stop-opacity:1; stop-color:#9E4603"/>
+   <stop offset="0.74902" style="stop-opacity:1; stop-color:#CE7322"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#FFA142"/>
+  </linearGradient>
+  <linearGradient id="id2" gradientUnits="userSpaceOnUse" x1="2019.2" y1="1381.28" x2="2019.2" y2="-231.87">
+   <stop offset="0" style="stop-opacity:1; stop-color:black"/>
+   <stop offset="0.223529" style="stop-opacity:1; stop-color:black"/>
+   <stop offset="0.529412" style="stop-opacity:1; stop-color:black"/>
+   <stop offset="0.709804" style="stop-opacity:1; stop-color:black"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:white"/>
+  </linearGradient>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g>
+  </g>
+  <g style="clip-path:url(#id0)">
+   <g>
+    <path class="fil0" d="M3417.09 1381.28l-2795.81 0c-343.12,0 -621.29,-111.11 -621.29,-248.18l0 -1116.79c0,-137.06 278.17,-248.17 621.29,-248.17l2795.81 0c343.14,0 621.31,111.11 621.31,248.17l0 1116.79c0,137.07 -278.17,248.18 -621.31,248.18z"/>
+    <path class="fil1" d="M-166.86 -110.5l0 272.07c0,1060.85 320.67,1920.77 716.23,1920.77l3222.93 0c395.56,0 716.23,-859.92 716.23,-1920.77l0 -272.07 -4655.4 0z"/>
+   </g>
+  </g>
+  <path class="fil2" d="M255.73 0l3526.93 0c140.66,0 255.74,115.08 255.74,255.73l0 976.17c0,140.66 -115.08,255.73 -255.74,255.73l-3526.93 0c-140.65,0 -255.73,-115.08 -255.73,-255.73l0 -976.17c0,-140.65 115.08,-255.73 255.73,-255.73z"/>
+ </g>
+</svg>
