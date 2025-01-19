@@ -58,8 +58,12 @@
 
 /* Hover Effect for SVG */
 .artificial-intelligence:hover {
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
+
+.customer-engagement:hover {
+    transform: scale(1.02);
+  }
 
 .squares {
   position: absolute;
@@ -152,6 +156,7 @@
   top: 370px;
   left: 942px;
   object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
 .horizontal-connection {
@@ -210,6 +215,8 @@
   /* transform: translateY(-3px);
   box-shadow: 0 0 20px 20px #fff; */
 }
+
+
 
 /* Responsive Design */
 /* @media (max-width: 768px) {
