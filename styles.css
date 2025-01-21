@@ -65,6 +65,23 @@
   left: 6.7%;
   text-transform: uppercase;
   color: #0DDEE3;
+  animation: pulse 3s infinite;
+}
+
+/* Keyframes for the pulsating effect */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.03);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
 }
 
 .squares {
