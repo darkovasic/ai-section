@@ -77,16 +77,16 @@
         const app = document.getElementById('typewriter-text');
 
         const phrases = [
-        'Customer\nEngagement',
-        'Cost\nSavings',
-        'Risk\nMitigation',
-        'Continuous\nInnovation',
+            'Customer\nEngagement',
+            'Cost\nSavings',
+            'Risk\nMitigation',
+            'Continuous\nInnovation',
         ];
 
         let currentPhraseIndex = 0;
 
         function startTyping() {
-        const phrase = phrases[currentPhraseIndex].replace(/\n/g, '<br>'); // Convert `\n` to `<br>`
+        const phrase = phrases[currentPhraseIndex].replace(/\n/g, '<br>');
         const typewriter = new Typewriter(app, {
             loop: false,
             delay: 100,
@@ -95,21 +95,18 @@
         });
 
         typewriter
-            .typeString(phrase) // Type the current phrase
-            .pauseFor(1000) // Pause for effect
-            .deleteAll() // Delete the text
+            .typeString(phrase)
+            .pauseFor(1000)
+            .deleteAll()
             .callFunction(() => {
-            // Update to the next phrase
-            currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+                currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
             })
             .callFunction(() => {
-            // Trigger the next typing animation
-            startTyping();
+                startTyping();
             })
             .start();
         }
 
-        // Start the animation
         startTyping();
     </script>
       
