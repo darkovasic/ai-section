@@ -7,6 +7,7 @@
     <title>AI Section</title>
     <!-- Link to the external CSS file -->
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body>
     <!-- Section Element -->
@@ -35,11 +36,10 @@
         <img src="assets/long_line.svg" alt="Long Line" class="long-line" />
         <img src="assets/benefit.svg" alt="Benefit" class="benefit" />
         <img src="assets/gradient.svg" alt="Gradient" class="gradient" />
-        <img
-          src="assets/customer_engagement.svg"
-          alt="Customer Engagement"
-          class="customer-engagement"
-        />
+        <div class="customer-engagement">
+            <div id="typewriter-text"></div>
+            <!-- <span id="cursor"></span> -->
+          </div>
         <img
           src="assets/horizontal_connection.svg"
           alt="Horizontal Connection"
@@ -72,5 +72,47 @@
       class="main-background"
       loading="lazy"
     />
+
+    <script>
+        const app = document.getElementById('typewriter-text');
+
+        const phrases = [
+        'Customer\nEngagement',
+        'Improved\nDecision-Making',
+        'Cost\nSavings',
+        'Risk\nMitigation',
+        'Continuous\nInnovation',
+        ];
+
+        let currentPhraseIndex = 0;
+
+        function startTyping() {
+        const phrase = phrases[currentPhraseIndex].replace(/\n/g, '<br>'); // Convert `\n` to `<br>`
+        const typewriter = new Typewriter(app, {
+            loop: false,
+            delay: 100,
+            deleteSpeed: 50,
+            cursor: '|',
+        });
+
+        typewriter
+            .typeString(phrase) // Type the current phrase
+            .pauseFor(1000) // Pause for effect
+            .deleteAll() // Delete the text
+            .callFunction(() => {
+            // Update to the next phrase
+            currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+            })
+            .callFunction(() => {
+            // Trigger the next typing animation
+            startTyping();
+            })
+            .start();
+        }
+
+        // Start the animation
+        startTyping();
+    </script>
+      
   </body>
 </html>

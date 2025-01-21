@@ -7,6 +7,13 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'TyporiRegular';
+  src: url('assets/fonts/Typori-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}  
+
 /* AI Section Styles */
 .ai-section {
   background-color: #f4f4f4;
@@ -58,10 +65,6 @@
 
 .artificial-intelligence:hover {
   transform: scale(1.04);
-}
-
-.customer-engagement:hover {
-  transform: scale(1.02);
 }
 
 .squares {
@@ -149,14 +152,44 @@
 }
 
 .customer-engagement {
-  position: absolute;
-  width: 615px;
-  height: auto;
-  top: 370px;
-  left: 942px;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
+    font-family: 'TyporiRegular', sans-serif;
+    position: absolute;
+    text-align: left;
+    line-height: 1.2; /* Controls spacing between lines */
+    display: block;
+    font-size: 92px;
+    width: 600px; /* Define a fixed width */
+    top: 370px;
+    left: 942px;
+    text-transform: uppercase;
+    color: #EA8330;
+    overflow: hidden; /* Prevents text from overflowing the container */
+    white-space: normal; /* Allows text wrapping */
+    word-wrap: break-word; /* Ensures long words break properly */
+  }
+  
+  #line {
+    display: block;
+  }
+  
+  #cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1em; /* Matches the height of a single line of text */
+    background-color: #EA8330;
+    animation: blink 0.8s step-end infinite; /* Cursor blink animation */
+    vertical-align: baseline; /* Align cursor with text */
+  }
+  
+  @keyframes blink {
+    from, to {
+      background-color: transparent;
+    }
+    50% {
+      background-color: #EA8330;
+    }
+  }
+       
 
 .horizontal-connection {
   position: absolute;
