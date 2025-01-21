@@ -16,7 +16,6 @@
 
 /* AI Section Styles */
 .ai-section {
-  background-color: #f4f4f4;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -54,17 +53,18 @@
 }
 
 .artificial-intelligence {
+  font-family: 'TyporiRegular', sans-serif;
   position: absolute;
+  text-align: left;
+  line-height: 1.2;
+  display: block;
+  font-size: 98px;
   max-width: 620px;
   height: auto;
-  top: 300px;
-  left: 7%;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
-
-.artificial-intelligence:hover {
-  transform: scale(1.04);
+  top: 275px;
+  left: 6.7%;
+  text-transform: uppercase;
+  color: #0DDEE3;
 }
 
 .squares {
@@ -152,44 +152,21 @@
 }
 
 .customer-engagement {
-    font-family: 'TyporiRegular', sans-serif;
-    position: absolute;
-    text-align: left;
-    line-height: 1.2; /* Controls spacing between lines */
-    display: block;
-    font-size: 92px;
-    width: 600px; /* Define a fixed width */
-    top: 370px;
-    left: 942px;
-    text-transform: uppercase;
-    color: #EA8330;
-    overflow: hidden; /* Prevents text from overflowing the container */
-    white-space: normal; /* Allows text wrapping */
-    word-wrap: break-word; /* Ensures long words break properly */
-  }
-  
-  #line {
-    display: block;
-  }
-  
-  #cursor {
-    display: inline-block;
-    width: 2px;
-    height: 1em; /* Matches the height of a single line of text */
-    background-color: #EA8330;
-    animation: blink 0.8s step-end infinite; /* Cursor blink animation */
-    vertical-align: baseline; /* Align cursor with text */
-  }
-  
-  @keyframes blink {
-    from, to {
-      background-color: transparent;
-    }
-    50% {
-      background-color: #EA8330;
-    }
-  }
-       
+  font-family: 'TyporiRegular', sans-serif;
+  position: absolute;
+  text-align: left;
+  line-height: 1.2;
+  display: block;
+  font-size: 92px;
+  width: 600px;
+  top: 370px;
+  left: 942px;
+  text-transform: uppercase;
+  color: #EA8330;
+  overflow: hidden;
+  white-space: normal; /* Allows text wrapping */
+  word-wrap: break-word; /* Ensures long words break properly */
+}  
 
 .horizontal-connection {
   position: absolute;
@@ -219,13 +196,11 @@
 }
 
 .btn-wrapper {
-    position: relative;
+  position: relative;
   width: 465px;
   height: 190px;
   margin-top: 558px;
   padding: 10px;
-  /* border: 2px solid white;
-  border-radius: 40px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -238,7 +213,6 @@
   background: url("assets/13.svg") no-repeat center center;
   background-size: contain;
   position: relative;
-  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
