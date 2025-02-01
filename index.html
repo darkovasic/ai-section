@@ -13,11 +13,16 @@
     <!-- Section Element -->
     <section class="ai-section">
       <div class="wrapper">
+        <img src="assets/left_connections.svg" alt="Left Connections" class="left-connections" />
+        <img src="assets/radar-fixed.svg" alt="Radar" class="radar" />
         <img
           src="assets/shaping_the_future.svg"
           alt="Shaping the future"
           class="shaping-the-future"
         />
+        <div class="artificial-intelligence">
+          <span>Artificial<br />Intelligence</span>
+        </div>
         <img src="assets/inline_squares.svg" alt="Squares" class="squares" />
         <img
           src="assets/vertical_connections.svg"
@@ -32,7 +37,28 @@
         <img src="assets/benefit.svg" alt="Benefit" class="benefit" />
         <img src="assets/gradient.svg" alt="Gradient" class="gradient" />
         <div class="customer-engagement">
-          <div id="typewriter-text"></div>
+          <div class="typewriter-text"></div>
+        </div>
+        <div class="robot-mobile">
+          <img src="assets/robot-m-fixed.svg" alt="Robot" class="robot-m" />
+          <img src="assets/long_line-m.svg" alt="Long Line" class="long-line-m" />
+          <img
+            src="assets/horizontal_connection.svg"
+            alt="Horizontal Connection"
+            class="horizontal-connection-m"
+          />
+          <img
+            src="assets/italic_dashes.svg"
+            alt="Dashes"
+            class="italic-dashes-m"
+          />
+          <img src="assets/benefit.svg" alt="Benefit" class="benefit-m" />
+          <img src="assets/gradient.svg" alt="Gradient" class="gradient-m" />
+          <div class="customer-engagement-m">
+            <div class="typewriter-text"></div>
+          </div>
+          <img src="assets/circles-m.svg" alt="Circles" class="circles-m" />
+
         </div>
         <img
           src="assets/horizontal_connection.svg"
@@ -45,18 +71,14 @@
           class="italic-dashes"
         />
         <img src="assets/circles.svg" alt="Circles" class="circles" />
-        <div class="artificial-intelligence">
-            <span>Artificial<br />Intelligence</span>
-        </div>
         <div class="btn-wrapper">
           <svg>
-            <rect x="0" y="0" fill="none" width="100%" height="100%" rx="40" ry="40" stroke="white"
-            stroke-width="5"/>
+            <rect x="0" y="0" width="100%" height="100%" />
           </svg>
           <a href="#" class="btn btn-1">
             <img
               src="assets/discover_how.svg"
-              width="345px"
+              class="discover-how"
               alt="Discover How"
             />
           </a>
@@ -64,47 +86,48 @@
       </div>
     </section>
     <img
-      src="assets/ai_home.png"
+      src="assets/mobile.jpg"
       alt="AI Fold"
       class="main-background"
       loading="lazy"
     />
 
     <script>
-        const app = document.getElementById('typewriter-text');
+      const elements = document.querySelectorAll('.typewriter-text');
 
-        const phrases = [
-            'Customer\nEngagement',
-            'Cost\nSavings',
-            'Risk\nMitigation',
-            'Continuous\nInnovation',
-        ];
+      const phrases = [
+          'Customer\nEngagement',
+          'Cost\nSavings',
+          'Risk\nMitigation',
+          'Continuous\nInnovation',
+      ];
 
-        let currentPhraseIndex = 0;
+      let currentPhraseIndex = 0;
 
-        function startTyping() {
-        const phrase = phrases[currentPhraseIndex].replace(/\n/g, '<br>');
-        const typewriter = new Typewriter(app, {
-            loop: false,
-            delay: 100,
-            deleteSpeed: 50,
-            cursor: '|',
-        });
+      function startTyping(element) {
+          const phrase = phrases[currentPhraseIndex].replace(/\n/g, '<br>');
+          const typewriter = new Typewriter(element, {
+              loop: false,
+              delay: 100,
+              deleteSpeed: 50,
+              cursor: '|',
+          });
 
-        typewriter
-            .typeString(phrase)
-            .pauseFor(1000)
-            .deleteAll()
-            .callFunction(() => {
-                currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
-            })
-            .callFunction(() => {
-                startTyping();
-            })
-            .start();
-        }
+          typewriter
+              .typeString(phrase)
+              .pauseFor(1000)
+              .deleteAll()
+              .callFunction(() => {
+                  currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+              })
+              .callFunction(() => {
+                  startTyping(element);
+              })
+              .start();
+      }
 
-        startTyping();
+      elements.forEach(startTyping);
+
     </script>
       
   </body>

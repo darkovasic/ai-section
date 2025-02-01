@@ -36,8 +36,8 @@
 
 /* Main Background Image Styling */
 .main-background {
-  width: 100%;
-  height: 800px;
+  width: 50%;
+  height: auto;
   object-fit: cover;
   display: block;
 }
@@ -181,8 +181,8 @@
   text-transform: uppercase;
   color: #EA8330;
   overflow: hidden;
-  white-space: normal; /* Allows text wrapping */
-  word-wrap: break-word; /* Ensures long words break properly */
+  white-space: normal;
+  word-wrap: break-word;
 }  
 
 .horizontal-connection {
@@ -250,6 +250,8 @@
   stroke-width: 2;
   stroke-dasharray: 422, 0;
   transition: all 1300ms cubic-bezier(0.19, 1, 0.22, 1);
+  rx: 40px;
+  ry: 40px;
 }
 
 .btn-wrapper:hover svg rect {
@@ -258,24 +260,207 @@
   stroke-dashoffset: 45;
 }
 
+.discover-how {
+  width: 345px;
+}
+
+.robot-mobile,
+.left-connections,
+.radar {
+  display: none;
+}
+
 /* Responsive Design */
-/* @media (max-width: 768px) {
-  .ai-section div {
-    height: 600px;
+@media (max-width: 768px) {
+  .main-background {
+    width: 100%;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    height: 870px;
+    padding-left: 9%;
+    padding-right: 9%;
+    background-image: url("assets/bg_mobile-fixed.svg");
+    text-align: start;
+  }
+
+  .robot1,
+  .robot2,
+  .robot3,
+  .robot4,
+  .vertical_connections,
+  .long-line,
+  .btn-wrapper svg,
+  .horizontal-connection,
+  .italic-dashes,
+  .benefit,
+  .gradient,
+  .customer-engagement {
+    display: none;
   }
 
   .shaping-the-future {
-    width: 300px;
-    top: 100px;
-    left: 5%;
+    position: static;
+    margin-top: 40px;
+    max-width: 64%;
+    height: auto;
+    object-fit: contain;
   }
 
-  .main-background {
-    height: 600px;
+  .artificial-intelligence {
+    position: static;
+    margin-top: 20px;
+    text-align: left;
+    line-height: 1.2;
+    display: block;
+    font-size: 48px;
+    max-width: 100%;
+    height: auto;
+    animation: pulse 3s infinite;
   }
 
-  .ai-section button {
-    padding: 8px 16px;
-    font-size: 0.9em;
+  .squares {
+    position: static;
+    margin-top: 20px;
+    display: flex;
+    align-self: center;
+    max-width: 75px;
+    height: auto;
   }
-} */
+
+  .benefit-m {
+    position: absolute;
+    width: 260px;
+    height: auto;
+    top: -137px;
+    left: -3px;
+    object-fit: contain;
+  }
+
+  .gradient-m {
+    position: absolute;
+    width: auto;
+    height: 85px;
+    top: -96px;
+    left: 0px;
+    object-fit: contain;
+  }
+
+  .customer-engagement-m {
+    font-family: 'TyporiRegular', sans-serif;
+    position: absolute;
+    text-align: left;
+    line-height: 1;
+    display: block;
+    font-size: 34px;
+    width: auto;
+    top: -89px;
+    left: 14px;
+    text-transform: uppercase;
+    color: #EA8330;
+    overflow: hidden;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+
+  .robot-mobile {
+    position: relative;
+    top: 165px;
+    display: flex;
+    width: 320px;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .robot-m {
+    position: static;
+    margin-top: 40px;
+    width: 240px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .long-line-m {
+    position: absolute;
+    width: 321px;
+    height: auto;
+    top: -109px;
+    left: -18px;
+    object-fit: contain;
+  }
+
+  .left-connections {
+    position: absolute;
+    display: block;
+    width: 62px;
+    height: auto;
+    top: 475px;
+    left: 0;
+    object-fit: contain;
+  }
+
+  .radar {
+    position: absolute;
+    display: block;
+    width: 18%;
+    top: 30px;
+    right: 30px;
+  }
+
+  .horizontal-connection-m {
+    position: absolute;
+    width: 179px;
+    height: auto;
+    top: 14px;
+    left: 72px;
+    transform: rotate(180deg);
+    object-fit: contain;
+  }
+
+  .italic-dashes-m {
+    position: absolute;
+    width: 64px;
+    height: auto;
+    top: 23px;
+    left: 122px;
+    object-fit: contain;
+  }
+
+  .circles-m {
+    position: absolute;
+    width: 48px;
+    height: auto;
+    top: -95px;
+    left: 240px;
+    object-fit: contain;
+  }
+
+  .btn-wrapper {
+    position: relative;
+    height: 96px;
+    margin-top: 163px;
+    padding: 0;
+    display: flex;
+    align-self: center;
+  }
+
+  .btn {
+    width: 100%;
+    height: 100%;
+    background: url("assets/13.svg") no-repeat center center;
+    background-size: contain;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .discover-how {
+    width: 175px;
+  }
+}
