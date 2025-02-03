@@ -8,6 +8,13 @@
 }
 
 @font-face {
+  font-family: 'ArialNovaBoldItalic';
+  src: url('assets/fonts/arialnovacond-bolditalic-webfont.woff') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}  
+
+@font-face {
   font-family: 'TyporiRegular';
   src: url('assets/fonts/Typori-Regular.ttf') format('truetype');
   font-weight: normal;
@@ -260,15 +267,60 @@
   stroke-dashoffset: 45;
 }
 
-.discover-how {
-  width: 345px;
-}
-
 .robot-mobile,
 .left-connections,
 .radar {
   display: none;
 }
+
+.custom-button {
+  font-family: 'ArialNovaBoldItalic', sans-serif;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 165px;
+  width: 438px;
+  font-size: 56px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(180deg, #9E4603 0%, #CE7322 75%, #FFA142 100%);
+  border: none;
+  border-radius: 27px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: none;
+}
+
+ /* CSS Button */
+.custom-button:hover {
+  box-shadow: none;
+  transform: none;
+}
+
+.custom-button:active {
+  transform: scale(0.95);
+}
+
+/* Ripple effect */
+.custom-button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease-out;
+}
+
+.custom-button:active::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -281,9 +333,10 @@
     justify-content: start;
     align-items: start;
     width: 100%;
-    height: 870px;
+    min-height: 870px;
     padding-left: 9%;
     padding-right: 9%;
+    padding-bottom: 50px;
     background-image: url("assets/bg_mobile-fixed.svg");
     text-align: start;
   }
@@ -416,7 +469,7 @@
     position: absolute;
     width: 179px;
     height: auto;
-    top: 14px;
+    top: 9px;
     left: 72px;
     transform: rotate(180deg);
     object-fit: contain;
@@ -426,7 +479,7 @@
     position: absolute;
     width: 64px;
     height: auto;
-    top: 23px;
+    top: 18px;
     left: 122px;
     object-fit: contain;
   }
@@ -473,7 +526,10 @@
     justify-content: center;
   }
 
-  .discover-how {
-    width: 175px;
+  .custom-button {
+    height: inherit;
+    width: 260px;
+    font-size: 36px;
+    border-radius: 13px;
   }
 }
